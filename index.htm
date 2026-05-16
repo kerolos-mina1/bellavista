@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bella Vista — Fine Dining</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ══════════════ NAVBAR ══════════════ -->
+    <nav id="nav">
+        <div class="wrap">
+            <div class="nav-inner">
+                <a href="#hero" class="nav-logo">Bella <span>Vista</span></a>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#why">Experience</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                    <li><a href="#reservation">Contact</a></li>
+                </ul>
+                <a href="#reservation" class="btn btn-gold" style="display:inline-flex">
+                    Reserve a Table
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-drawer" id="mobileDrawer">
+            <a href="#about" class="mob-link">About</a>
+            <a href="#menu" class="mob-link">Menu</a>
+            <a href="#why" class="mob-link">Experience</a>
+            <a href="#testimonials" class="mob-link">Reviews</a>
+            <a href="#reservation" class="mob-link">Contact</a>
+            <a href="#reservation" class="btn btn-gold mob-link">Reserve a Table</a>
+        </div>
+    </nav>
+
+    <!-- ══════════════ HERO ══════════════ -->
+    <section id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-accent-left"></div>
+        <div class="hero-accent-right"></div>
+        <div class="hero-content">
+            <div class="hero-tag">
+                <i class="fa-solid fa-star"></i> Est. 2010 &nbsp;·&nbsp; Fine Dining
+            </div>
+            <h1 class="hero-title">
+                Where Every Meal<br>
+                <em>Becomes a Memory</em>
+            </h1>
+            <p class="hero-sub">
+                An intimate sanctuary of flavour, light, and craft — where classically trained
+                chefs transform the season's finest ingredients into unforgettable moments.
+            </p>
+            <div class="hero-cta">
+                <a href="#reservation" class="btn btn-gold">
+                    <i class="fa-regular fa-calendar"></i> Reserve Your Table
+                </a>
+                <a href="#menu" class="btn btn-outline">
+                    Explore Our Menu <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <div class="line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- ══════════════ ABOUT ══════════════ -->
+    <section id="about">
+        <div class="wrap">
+            <div class="about-inner">
+
+                <div class="about-visual reveal left">
+                    <div class="about-img-main">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <div class="about-badge">
+                        <strong>15</strong>
+                        <span>Years of Craft</span>
+                    </div>
+                </div>
+
+                <div class="about-text reveal right">
+                    <span class="eyebrow">Our Story</span>
+                    <h2 class="section-title">Rooted in Passion,<br>Refined by Time</h2>
+                    <p>
+                        Bella Vista was born from a simple belief: that great food is the language of love.
+                        Founded in 2010 by Chef Marco Rossi, our kitchen has always been a place where
+                        classical technique meets seasonal imagination.
+                    </p>
+                    <p>
+                        Every dish is built from relationships — with local farmers, artisan producers,
+                        and the guests who return season after season to see what we've created for them.
+                    </p>
+                    <div class="about-divider"></div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <strong>2010</strong>
+                            <span>Established</span>
+                        </div>
+                        <div class="stat-item">
+                            <strong>4.9★</strong>
+                            <span>Avg Rating</span>
+                        </div>
+                        <div class="stat-item">
+                            <strong>50+</strong>
+                            <span>Signature Dishes</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════ MENU ══════════════ -->
+    <section id="menu">
+        <div class="wrap">
+            <div class="text-center reveal">
+                <div class="gold-rule"><i class="fa-solid fa-leaf"></i></div>
+                <span class="eyebrow">Curated Selections</span>
+                <h2 class="section-title">Our Menu</h2>
+                <p class="section-sub">Seasonal ingredients, classical technique, and a touch of theatre — on every
+                    plate.</p>
+            </div>
+
+            <div class="menu-tabs reveal">
+                <button class="menu-tab active" data-tab="starters">Starters</button>
+                <button class="menu-tab" data-tab="mains">Mains</button>
+                <button class="menu-tab" data-tab="desserts">Desserts</button>
+            </div>
+
+            <!-- STARTERS -->
+            <div class="menu-panel active" id="tab-starters">
+                <div class="menu-grid">
+                    <div class="menu-card reveal">
+                        <div class="menu-img">🦞</div>
+                        <div class="menu-body">
+                            <div class="menu-meta">
+                                <div class="menu-name">Lobster Bisque</div>
+                                <div class="menu-price">$18</div>
+                            </div>
+                            <p class="menu-desc">Velvety bisque of Atlantic lobster, saffron cream, tarragon oil, and a
+                                flaky pastry crown.</p>
+                            <span class="menu-tag">Chef's Choice</span>
+                        </div>
+                    </div>
+                    <div class="menu-card reveal">
+                        <div class="menu-img">🥗</div>
+                        <div class="menu-body">
+                            <div class="menu-meta">
+                                <div class="menu-name">Heirloom Tomato Salad</div>
+                                <div class="menu-price">$14</div>
+                            </div>
+                            <p class="menu-desc">Garden heirloom tomatoes, whipped burrata, basil granita, aged
+                                balsamic, and focaccia crisps.</p>
+                            <span class="menu-tag">Vegetarian</span>
+                        </div>
+                    </div>
+                    <div class="menu-card reveal">
+                        <div class="menu-img">🍄</div>
+                        <div class="menu-body">
+                            <div class="menu-meta">
+                                <div class="menu-name">Wild Mushroom Tartlet</div>
+                                <div class="menu-price">$16</div>
+                            </div>
+                            <p class="menu-desc">Porcini, chanterelle, and truffle duxelles in a buttered shell,
+                                finished with crème fraîche.</p>
+                            <span class="menu-tag">Seasonal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MAINS -->
+            <div class="menu-panel" id="tab-mains">
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="menu-img">🥩</div>
+                        <div class="menu-body">
+                            <div class="menu-meta">
+                                <div class="menu-name">Wagyu Filet Mignon</div>
+                                <div class="menu-price">$58</div>
+                            </div>
+                            <p class="menu-desc">200g A5 Wagyu tenderloin, pomme purée, asparagus, bone marrow jus, and
+                                black truffle shavings.</p>
+                            <span class="menu-tag">Signature</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-img">🐟</div>
+                        <div class="menu-body">
+                            <div class="menu-meta">
+                                <div class="menu-name">Pan-Seared Halibut</div>
+                                <div class="menu-price">$42</div>
+                            </div>
+                            <p class="menu-desc">Line-caught halibut, pea velouté, crispy capers, lemon butter, and sea
+                                herb garnish.</p>
+                            <span class="menu-tag">Sustainable</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-img">🍝</div>
+                        <div class="menu-body">
+                            <div class="menu-meta">
+                                <div class="menu-name">Hand-Rolled Pappardelle</div>
+                                <div class="menu-price">$34</div>
+                            </div>
+                            <p class="menu-desc">Slow-braised short rib ragù, aged Parmigiano-Reggiano, fresh herbs, and
+                                a 63°C egg yolk.</p>
+                            <span class="menu-tag">Vegetarian Option</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DESSERTS -->
+            <div class="menu-panel" id="tab-desserts">
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="menu-img">🍮</div>
+                        <div class="menu-body">
+                            <div class="menu-meta">
+                                <div class="menu-name">Tahitian Vanilla Crème Brûlée</div>
+                                <div class="menu-price">$14</div>
+                            </div>
+                            <p class="menu-desc">Silken custard, caramelised demerara crust, fresh berries, and
+                                chantilly cream.</p>
+                            <span class="menu-tag">Classic</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-img">🍫</div>
+                        <div class="menu-body">
+                            <div class="menu-meta">
+                                <div class="menu-name">Valrhona Chocolate Fondant</div>
+                                <div class="menu-price">$15</div>
+                            </div>
+                            <p class="menu-desc">Warm 70% dark chocolate heart, salted caramel centre, almond milk ice
+                                cream, and cocoa dust.</p>
+                            <span class="menu-tag">Must Try</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-img">🍋</div>
+                        <div class="menu-body">
+                            <div class="menu-meta">
+                                <div class="menu-name">Lemon Tart Moderne</div>
+                                <div class="menu-price">$13</div>
+                            </div>
+                            <p class="menu-desc">Amalfi lemon curd, Swiss meringue, citrus gel, and candied zest on a
+                                pâte sablée base.</p>
+                            <span class="menu-tag">Light</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ══════════════ WHY US ══════════════ -->
+    <section id="why">
+        <div class="wrap">
+            <div class="text-center reveal">
+                <div class="gold-rule"><i class="fa-solid fa-diamond"></i></div>
+                <span class="eyebrow">The Bella Vista Difference</span>
+                <h2 class="section-title">An Experience Like No Other</h2>
+                <p class="section-sub">Three pillars guide everything we do — from kitchen to table.</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card reveal">
+                    <div class="why-icon"><i class="fa-solid fa-user-tie"></i></div>
+                    <div class="why-title">Master Chefs</div>
+                    <p class="why-desc">Our culinary team trained in the world's finest kitchens — from Paris to Tokyo.
+                        Every plate is an expression of decades of mastery and relentless curiosity.</p>
+                </div>
+                <div class="why-card reveal">
+                    <div class="why-icon"><i class="fa-solid fa-seedling"></i></div>
+                    <div class="why-title">Fresh Ingredients</div>
+                    <p class="why-desc">We source daily from local farms, sustainable fisheries, and artisan producers.
+                        If it isn't seasonal and impeccably fresh, it doesn't reach your table.</p>
+                </div>
+                <div class="why-card reveal">
+                    <div class="why-icon"><i class="fa-solid fa-couch"></i></div>
+                    <div class="why-title">Cosy Atmosphere</div>
+                    <p class="why-desc">Warm candlelight, hand-crafted furnishings, and curated acoustics create an
+                        ambiance that feels intimate for two and celebratory for twenty.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════ TESTIMONIALS ══════════════ -->
+    <section id="testimonials">
+        <div class="wrap">
+            <div class="text-center reveal">
+                <div class="gold-rule"><i class="fa-solid fa-quote-left"></i></div>
+                <span class="eyebrow">Guest Voices</span>
+                <h2 class="section-title">What Our Guests Say</h2>
+                <p class="section-sub">Every evening is shaped by the people who grace our tables.</p>
+            </div>
+            <div class="testi-grid">
+                <div class="testi-card reveal">
+                    <div class="testi-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testi-quote">"The Wagyu was unlike anything I've tasted outside of Tokyo. The service was
+                        anticipatory, warm, and completely effortless. This is our new anniversary restaurant."</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar" style="background:var(--gold)">E</div>
+                        <div>
+                            <div class="testi-name">Eleanor Marsh</div>
+                            <div class="testi-role">Food Critic, The Daily Review</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testi-card reveal">
+                    <div class="testi-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testi-quote">"Every detail — from the amuse-bouche to the petit fours — spoke of genuine
+                        care. The chocolate fondant alone is worth the reservation. An absolutely magical evening."</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar" style="background:#7c5cbf">J</div>
+                        <div>
+                            <div class="testi-name">James Okonkwo</div>
+                            <div class="testi-role">Architect & Food Enthusiast</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testi-card reveal">
+                    <div class="testi-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testi-quote">"We celebrated our daughter's graduation here. Chef Marco came to our table
+                        personally. The mushroom tartlet and the crème brûlée are things we still talk about months
+                        later."</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar" style="background:#2a7fc7">S</div>
+                        <div>
+                            <div class="testi-name">Sophia & David Chen</div>
+                            <div class="testi-role">Regular Guests since 2014</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════ RESERVATION ══════════════ -->
+    <section id="reservation">
+        <div class="wrap">
+            <div class="text-center reveal">
+                <div class="gold-rule"><i class="fa-regular fa-calendar"></i></div>
+                <span class="eyebrow">Book Your Evening</span>
+                <h2 class="section-title">Reserve a Table</h2>
+                <p class="section-sub">We look forward to welcoming you. Reservations confirmed within 24 hours.</p>
+            </div>
+            <div class="res-inner">
+                <div class="res-info reveal left">
+                    <h3 class="section-title" style="font-size:1.6rem;text-align:left">Come Find Us</h3>
+                    <p>We're open Tuesday through Sunday from 5 PM to 11 PM. Private dining rooms are available for
+                        special occasions — contact us to arrange.</p>
+                    <div class="res-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>28 Crescent Lane, Mayfair, London, W1K 4EQ</span>
+                    </div>
+                    <div class="res-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+44 (0)20 7946 0321</span>
+                    </div>
+                    <div class="res-contact-item">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>reservations@bellavista.co.uk</span>
+                    </div>
+                    <div class="res-contact-item">
+                        <i class="fa-regular fa-clock"></i>
+                        <span>Tue – Sun: 5:00 PM – 11:00 PM</span>
+                    </div>
+                </div>
+
+                <div class="res-form reveal right">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="r-name">Full Name</label>
+                            <input type="text" id="r-name" placeholder="Your name" />
+                        </div>
+                        <div class="form-group">
+                            <label for="r-email">Email</label>
+                            <input type="email" id="r-email" placeholder="your@email.com" />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="r-date">Date</label>
+                            <input type="date" id="r-date" />
+                        </div>
+                        <div class="form-group">
+                            <label for="r-time">Preferred Time</label>
+                            <select id="r-time">
+                                <option value="" disabled selected>Select time…</option>
+                                <option>5:00 PM</option>
+                                <option>5:30 PM</option>
+                                <option>6:00 PM</option>
+                                <option>6:30 PM</option>
+                                <option>7:00 PM</option>
+                                <option>7:30 PM</option>
+                                <option>8:00 PM</option>
+                                <option>8:30 PM</option>
+                                <option>9:00 PM</option>
+                                <option>9:30 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="r-guests">Number of Guests</label>
+                        <select id="r-guests">
+                            <option value="" disabled selected>How many guests?</option>
+                            <option>1 Guest</option>
+                            <option>2 Guests</option>
+                            <option>3 Guests</option>
+                            <option>4 Guests</option>
+                            <option>5 Guests</option>
+                            <option>6 Guests</option>
+                            <option>7+ Guests (Private Dining)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="r-notes">Special Requests</label>
+                        <textarea id="r-notes"
+                            placeholder="Allergies, celebrations, dietary needs, seating preferences…"></textarea>
+                    </div>
+                    <button class="btn btn-gold btn-form" id="resBtn">
+                        <i class="fa-regular fa-calendar-check"></i> Confirm Reservation
+                    </button>
+                    <div class="form-success" id="resSuccess">
+                        <i class="fa-solid fa-circle-check"></i>
+                        Thank you! We'll confirm your reservation within 24 hours.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════ FOOTER ══════════════ -->
+    <footer>
+        <div class="wrap">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <a href="#hero" class="nav-logo">Bella <span>Vista</span></a>
+                    <p>A haven of fine flavours and warm candlelight in the heart of the city. Dinner, crafted with
+                        love, served with soul.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigate</h4>
+                    <ul>
+                        <li><a href="#about">Our Story</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#why">Experience</a></li>
+                        <li><a href="#testimonials">Reviews</a></li>
+                        <li><a href="#reservation">Reserve</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="#">Private Dining</a></li>
+                        <li><a href="#">Gift Vouchers</a></li>
+                        <li><a href="#">Press & Media</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2025 Bella Vista Restaurant. All rights reserved.</span>
+                <span>Designed with <i class="fa-solid fa-heart" style="color:var(--gold)"></i><strong>
+                        kerolos</strong></span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ══════════════ JAVASCRIPT ══════════════ -->
+    <script src="script.js"></script>
+</body>
+
+</html>
